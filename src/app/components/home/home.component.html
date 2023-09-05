@@ -1,0 +1,37 @@
+<h1>Counter app</h1>
+<button (click)=" counter('minus') ">Dec</button>
+<p>Count: {{count}}</p>
+<button (click)=" counter('add') ">Inc</button>
+
+
+<input type="text" #box placeholder="name" name="name" />
+
+<p>{{disname}}</p>
+
+<button (click)="getname(box.value)">getname</button>
+
+<h1>Form</h1>
+<form #formdata="ngForm" (ngSubmit)="getdata(formdata.value)">
+     <input type="text" id="nameInput" name="name" ngModel placeholder="Name">
+     <input type="text" id="emailInput" name="email" ngModel placeholder="Email">
+     <input type="text" id="pass" name="pass" ngModel placeholder="pass">
+     <button type="submit">Submit</button>
+</form>
+
+<div>
+     <h1>Show form data</h1>
+     <table border="1">
+          <tr>
+               <th>Name</th>
+               <th>Email</th>
+
+          </tr>
+          <tbody *ngFor="let el of userdata">
+               <tr>
+                    <td>{{el.name}}</td>
+                    <td>{{el.email}}</td>
+               
+               </tr>
+          </tbody>
+     </table>
+</div>
