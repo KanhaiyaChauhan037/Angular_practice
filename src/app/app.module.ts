@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FetchdataComponent } from './components/fetchdata/fetchdata.component';
-import {HttpClientModule} from "@angular/common/http"
+import {HttpClientModule} from "@angular/common/http";
+import { MainpageComponent } from './components/mainpage/mainpage.component'
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FetchdataComponent
+    FetchdataComponent,
+    MainpageComponent
  
  
 
