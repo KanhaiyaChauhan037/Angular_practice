@@ -1,0 +1,17 @@
+<h1 style="text-align: center;">Fetch api and show data</h1>
+
+
+<div class="main">
+     <div *ngFor="let el of apiData">
+          <div>
+               <img style="width: 100%; height: 350px;" src={{el.image}} />
+               <h4>{{el.title}}</h4>
+               <p>{{el.category}}</p>
+               <h4>{{el.price}}</h4>
+               <!-- <p>{{el.description}}</p> -->
+               <p>{{el.rating.rate}}</p>
+          </div>
+
+     </div>
+
+</div>
